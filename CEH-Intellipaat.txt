@@ -1,0 +1,105 @@
+intellipaat  support number : 9513252311
+
+************************************************
+
+Google drive for  vmware : 
+https://drive.google.com/file/d/15WfzKdmbhBqH_b6x-Hv1TPwIIiuHFj7k/view
+
+license key : 
+
+MC60H-DWHD5-H80U9-6V85M-8280D < worked for me!
+4A4RR-813DK-M81A9-4U35H-06KND
+--unchecked
+NZ4RR-FTK5H-H81C1-Q30QH-1V2LA
+JU090-6039P-08409-8J0QH-2YR7F
+
+*************************************************
+
+https://sourceforge.net/projects/metasploitable/files/Metasploitable2/
+
+msfadmin
+
+download the virus from --- dangeresou 
+https://github.com/kh4sh3i/Ransomware-Samples
+
+Commands :
+
+*****************************************************************************************************************************************************
+
+********************************************                                                                                **************************************************************
+
+********************************************                                Foot Printing                                **************************************************************
+
+********************************************                                                                                **************************************************************
+
+*****************************************************************************************************************************************************    
+
+*****************************************************************************************************************************************************
+
+********************************************                                                                                **************************************************************
+
+********************************************                                Network Scan                                **************************************************************
+
+********************************************                                                                                **************************************************************
+
+*****************************************************************************************************************************************************    
+
+*****************************************************************************************************************************************************
+
+********************************************                                                                                **************************************************************
+
+********************************************                                ENUMERATION                                **************************************************************
+
+********************************************                                                                                **************************************************************
+
+*****************************************************************************************************************************************************
+
+- Wireshark is a network and protocol analyzer used to capture and inspect packets on a network in real-time.
+- 
+
+TCP Flags (used in packet headers):
+
+SYN   (Synchronize):             Used to initiate a new TCP connection between two systems.
+ACK   (Acknowledgment):     Confirms that data has been received successfully.
+RST   (Reset):                     mmediately terminates a connection due to an error or unexpected condition.
+FIN    (Finish):                     Gracefully closes a connection when data transfer is complete.
+URG   (Urgent):                 Marks certain data as urgent and tells the receiver to process it immediately.
+PSH   (Push):                     Tells the receiver to push the data to the application without waiting to fill the buffer.
+
+enum ==>
+
+#### check ipaddress and server details by using below in kali
+
+dig hostname 
+nslookup  domian-name 
+
+##### d is domain, t is type . it will extract
+
+dnsrecon -d intellipaat.com -t brt
+
+### Enumerates supported SSH algorithms on the target to identify potential weak or deprecated algorithms.
+
+nmap --script=ssh2-enum-algos.nse 192.168.18.130 --open -p22     → Scans SSH to list supported encryption algorithms.
+
+fragmenttation ==>
+
+### Sends fragmented TCP packets with the SYN flag to test firewall/IDS behavior.
+
+sudo hping3 -S 192.168.18.130 -p 80 -f     → Sends fragmented SYN packets to test firewall detection.
+
+### Performs a stealth scan (-sS) with aggressive options (-A), fragmenting packets (-f) to evade detection and using verbose output (-v).
+
+sudo nmap -sS -T4 -A -f -v 192.168.18.130    → Stealth scan with OS detection, version scan, and fragmented packets to avoid detection.
+
+Nmap-Zenmap GUI :
+
+**1. Intense scan** – `nmap -T4 -A -v <target>`: Performs detailed scan with OS detection, version detection, scripts, and traceroute.  
+**2. Intense scan plus UDP** – `nmap -sS -sU -T4 -A -v <target>`: Same as intense scan, adds UDP scan on common ports.  
+**3. Intense scan, all TCP ports** – `nmap -p 1-65535 -T4 -A -v <target>`: Same as intense scan but checks all TCP ports.  
+**4. Intense scan, no ping** – `nmap -T4 -A -v -Pn <target>`: Same as intense scan but skips ping, assumes host is up.  
+**5. Ping scan** – `nmap -sn <target>`: Only checks which hosts are up, no port scan.  
+**6. Quick scan** – `nmap -T4 -F <target>`: Fast scan o f top 100 common ports.  
+**7. Quick scan plus** – `nmap -sV -T4 -O -F --version-light <target>`: Quick scan with light version and OS detection.  
+**8. Quick traceroute** – `nmap -sn --traceroute <target>`: Host discovery with traceroute, no port scan.  
+**9. Regular scan** – `nmap <target>`: Default scan of top 1000 TCP ports.  
+**10. Slow comprehensive scan** – `nmap -sS -sU -T2 -p- -A -v <target>`: Full TCP and UDP scan with OS and version detection, very slow but thorough.
