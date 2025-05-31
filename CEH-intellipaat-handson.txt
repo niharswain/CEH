@@ -139,5 +139,5 @@ scott.ns.cloudflare.com
 
 5. What kind of info you have to gather from these social media handles.
    - job profiles
-   - technolgies used 
+   - technologies used 
    - Email 
