@@ -1,23 +1,4 @@
-## FOOT PRINTING
 
-What is and Why Foot Printing?
-What is FootPrinting?
-Copyright IntelliPaat, All rights reserved
-Footprinting is the process of collecting as much information as possible about a target network, for
-identifying various ways to intrude into an organization’s network system.
-WhyFootPrinting?
-Footprinting is necessary to systematically and methodically ensure that all pieces of information related to
-the aforementioned technologies are identified. Without a sound methodology for performing this type of
-reconnaissance, you are likely to miss key pieces of information related to a specific technology or
-organization. Footprinting is often the most arduous task of trying to determine the security posture of an
-entity; however, it is one of the most important. Footprinting must be performed accurately and in a
-controlled fashion.
-
-
-
-Here is an organized note for your MarkText based on the Intellipaat "Footprinting and Reconnaissance" PDF content:
-
----
 
 # Footprinting and Reconnaissance
 
@@ -47,9 +28,9 @@ Footprinting is the process of collecting as much information as possible about 
 
 - Collect basic information about the target and its network.
 
-- Determine operating systems, platforms, web server versions.
+- Determine **operating systems, platforms, web server versions.**
 
-- Use techniques like Whois, DNS queries, organizational queries.
+- Use techniques like **Whois, DNS queries, organizational queries**.
 
 - Identify vulnerabilities and exploits for launching attacks.
 
@@ -62,6 +43,8 @@ Footprinting is the process of collecting as much information as possible about 
 ## Information to Collect
 
 ## Network Information
+
+                                
 
 - Domain names
 
@@ -125,6 +108,10 @@ Skipping footprinting can lead to failure in attacks due to lack of critical inf
 
 - Incorrect assumptions about the target (e.g., wrong bank for phishing).
 
+
+
+
+
 ## Footprinting Using Search Engines
 
 - Search engines are primary sources for extracting technology platforms, employee data, login pages, intranet portals, and contact information.
@@ -167,6 +154,10 @@ Common Google search operators used for footprinting:
 
 - Example command: `theharvester -d example.com -l 200 -b baidu`
 
+<img src="file:///C:/Users/nihar/AppData/Roaming/marktext/images/2025-05-31-12-49-53-image.png" title="" alt="" width="524">-53-image.png" title="" alt="" width="524">
+
+
+
 ## Deep and Dark Web Footprinting
 
 - Use Tor Browser, ExoneraTor, OnionLand Search engine to gather sensitive personal information.
@@ -193,14 +184,10 @@ Common Google search operators used for footprinting:
 
 - Installation example: `sudo apt-get install traceroute`
 
----
+![](C:\Users\nihar\AppData\Roaming\marktext\images\2025-05-31-12-51-11-image.png)
 
-This note is structured for easy reading and quick revision in MarkText. You can expand or add examples based on your learning progress.
+***Useful Commands :***
 
-### Citations:
+ theharvester -d floorcafe.com -l 200 -b baidu          - search the mail ids available in baidu search engine
 
-1. https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/72747133/81958610-ba19-4d4d-857c-bac63aefc092/Module-02-Footprinting-And-Reconnaissance.pdf
-
----
-
-Answer from Perplexity: [i am learning cybersecurity from intellipaat. they have some pdf files to...](https://www.perplexity.ai/search/i-am-learning-cybersecurity-fr-86T1ej2BRhG08.GKbCqsdw?login-source=fileUpload&login-new=true&utm_source=copy_output)
+sudo apt-get install traceroute
